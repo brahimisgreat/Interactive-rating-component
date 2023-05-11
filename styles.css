@@ -1,0 +1,50 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    width: 28.6667em;
+    height: 28.733333em;
+    background-color:  hsl(213, 19%, 18%);
+    border-radius: 12%;
+    flex-direction: column;
+}
+.stars{
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: start;    
+}
+
+.stars span{
+    opacity: 50%;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 30px; 
+}
+
+.stars span:hover {
+    opacity: 100%;
+}
+
+.stars span:hover ~span{
+    opacity: 100%;
+}
+
+
+
+
+
+
+
